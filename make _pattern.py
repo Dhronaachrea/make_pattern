@@ -5,7 +5,7 @@ if (n % 2 != 0 and n >= 5):
             print('* ' * ((n + 1) // 2), end='')
             print('  ' * (((n + 1) // 2) - 2), end='')
             print('*', end='')
-        elif (i > 0 and i < (n // 2)):
+        elif 0 < i < (n // 2):
             print('  ' * (n // 2), end='')
             print('* ', end='')
             print('  ' * (((n + 1) // 2) - 2), end='')
@@ -13,7 +13,7 @@ if (n % 2 != 0 and n >= 5):
         elif (i == (n // 2)):
             print('* ' * n, end='')
 
-        elif (i > (n // 2) and i < (n - 1)):
+        elif (n // 2) < i < (n - 1):
             print('* ', end='')
             print('  ' * (((n + 1) // 2) - 2), end='')
             print('*', end='')
